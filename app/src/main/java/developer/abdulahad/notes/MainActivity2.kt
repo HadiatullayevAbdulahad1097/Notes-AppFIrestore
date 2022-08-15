@@ -49,7 +49,7 @@ class MainActivity2 : AppCompatActivity() {
                             startActivity(Intent(this@MainActivity2, MainActivity3::class.java))
                         }
                         R.id.delete -> {
-                            val document = firebaseFirestore.collection("Notes").document(notes.id.toString())
+                            val document = firebaseFirestore.collection("Notes").document(notes.id)
                             val alertDialog = AlertDialog.Builder(this@MainActivity2).create()
                             val itemDialogPermissionBinding = ItemDialogPermissionBinding.inflate(layoutInflater)
                             document.delete()

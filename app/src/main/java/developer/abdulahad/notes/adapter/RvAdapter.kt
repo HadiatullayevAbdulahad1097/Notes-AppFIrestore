@@ -21,12 +21,12 @@ class RvAdapter(var list: ArrayList<Notes>, var clickItem: ClickItem) :
                 notesItemBinding.tvNotes.setText(notes.notes)
                 notesItemBinding.time.text = notes.dataTime
 
-                if (notesItemBinding.tvName.text.toString().length >= 11){
-                    notesItemBinding.tvName.text = "${notesItemBinding.tvName.text.substring(0,notesItemBinding.tvName.text.toString().length-2)}.."
+                if (notesItemBinding.tvName.text.toString().length >= 12){
+                    notesItemBinding.tvName.text = "${notesItemBinding.tvName.text.substring(0,10)}.."
                 }
 
-                if (notesItemBinding.tvNotes.text.toString().length >= 13){
-                    notesItemBinding.tvNotes.text = "${notesItemBinding.tvNotes.text.substring(0,notesItemBinding.tvNotes.text.toString().length-2)}.."
+                if (notesItemBinding.tvNotes.text.toString().length >= 12){
+                    notesItemBinding.tvNotes.text = "${notesItemBinding.tvNotes.text.substring(0,10)}.."
                 }
 
                 }

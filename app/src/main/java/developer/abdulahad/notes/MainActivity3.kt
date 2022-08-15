@@ -60,8 +60,6 @@ class MainActivity3 : AppCompatActivity() {
         list.add("#FF8A80")
 
         binding.apply {
-
-
             when (MyObject.type) {
                 "Add" -> {
                     imageAdd.setOnClickListener {
